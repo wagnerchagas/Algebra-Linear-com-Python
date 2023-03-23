@@ -1,0 +1,92 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPzUo9mnthP2Lducyox4KVf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/wagnerchagas/Algebra-Linear-com-Python/blob/master/C%C3%A1lculo%20de%20Fatorial%20no%20while%20e%20no%20for\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6POKEKtcXVIr",
+        "outputId": "5c154b3d-53c0-4c87-a537-e1c46863abb4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Entre com um número inteiro5\n",
+            "\n",
+            "O fatorial de 5 é 120\n"
+          ]
+        }
+      ],
+      "source": [
+        "#versão 1 com for\n",
+        "n = int(input(\"Entre com um número inteiro\"))\n",
+        "resp = 1\n",
+        "for cont in range(2, n+1):\n",
+        "    resp  = resp * cont\n",
+        "print(\"\\nO fatorial de\", n, \"é\", resp)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#versão com while\n",
+        "n = int(input(\"Entre com um número  inteiro:\"))\n",
+        "resp = 1 \n",
+        "cont = 2\n",
+        "while cont <= n:\n",
+        "  resp = resp * cont\n",
+        "  cont = cont + 1\n",
+        "print(\"\\n0 fatorial de\", n, \"é\", resp)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3ytPmt9uX_1z",
+        "outputId": "16cd62de-a6b5-47f2-8a14-1d10bece41a5"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Entre com um número  inteiro:5\n",
+            "\n",
+            "0 fatorial de 5 é 120\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
